@@ -34,6 +34,10 @@
         <div>
             <input class="form-control w-100 mt-1" name="address" required>
         </div>
+        <p class="mt-3">携帯電話番号</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="keitai" required>
+        </div>
         <p class="mt-3">近大メールアドレス</p>
         <div>
             <input class="form-control w-100 mt-1" name="kindaimail" required>
@@ -53,7 +57,7 @@
     <script>
 
         $(document).ready(function () {
-            const liffId = "1656702193-LQQ5BgkX";
+            const liffId = "1656705920-4djnlvmV";
             initializeLiff(liffId);
         })
 
@@ -89,9 +93,10 @@
                 const gakka  = $('input[name="gakka"]').val();
                 const yuubinnbanngou = $('input[name="yuubinnbanngou"]').val();
                 const address = $('input[name="address"]').val();
+                const keitai = $('input[name="keitai"]').val();
                 const kindaimail = $('input[name="kindaimail"]').val();
                 const rennrakusaki = $('input[name="rennrakusaki"]').val();
-                const msg = `${name}\n${furigana}\n${gakusekibangou}\n${gakka}\n${yuubinnbanngou}\n${address}\n${kindaimail}\n${rennrakusaki}`;
+                const msg = `${name}\n${furigana}\n${gakusekibangou}\n${gakka}\n${yuubinnbanngou}\n${address}\n${keitai}\n${kindaimail}\n${rennrakusaki}`;
                 sendText(msg);
                 return false;
             });
