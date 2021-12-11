@@ -107,13 +107,13 @@
                 const furigana1 = $('input[name="furigana1"]').val();
                 const furigana2 = $('input[name="furigana2"]').val();
                 const gakusekibangou  = $('input[name="gakusekibangou"]').val();
-                const gakunenn  = $('input[name="gakunenn"]').val();
+                const grade  = $('input[name="grade"]').val();
                 const yuubinnbanngou = $('input[name="yuubinnbanngou"]').val();
                 const address = $('input[name="address"]').val();
                 const keitai = $('input[name="keitai"]').val();
                 const kindaimail = $('input[name="kindaimail"]').val();
                 const rennrakusaki = $('input[name="rennrakusaki"]').val();
-                const msg = `${name1}\n${name2}\n${furigana1}\n${furigana2}\n${gakusekibangou}\n${gakunenn}\n${yuubinnbanngou}\n${address}\n${keitai}\n${kindaimail}\n${rennrakusaki}`;
+                const msg = `${name1}\n${name2}\n${furigana1}\n${furigana2}\n${gakusekibangou}\n${grade}\n${yuubinnbanngou}\n${address}\n${keitai}\n${kindaimail}\n${rennrakusaki}`;
                 sendText(msg);
                 return false;
             });
